@@ -9,13 +9,7 @@
 &nbsp;
 A empresa fictícia DINDIN, quer lançar uma plataforma de conteúdo sobre Educação Financeira e você foi contratado como dev para criar essa plataforma.
 
-Utilizaremos o design fornecido pelo design feito em Figma e será construído em:
+Utilizaremos o design fornecido pelo designer feito em Figma e será construído em:
 
 -   HTML
 -   CSS
-
-&nbsp;
-
-###### made by
-
-#### Eduardo Carreiro
