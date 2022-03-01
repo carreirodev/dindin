@@ -1,1 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+/*************** Initial Adjustments ***************/
+* {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+}
+
+p {
+	font-size: 1.125rem;
+}
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/********************** Menu Bar  **********************/
+header {
+	background-color: #2e948a;
+}
+
+.topBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topBar img {
+	margin: 1rem 0;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	column-gap: 37px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
