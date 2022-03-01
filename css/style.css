@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;@400;700&display=swap");
 
 /*************** Initial Adjustments ***************/
 * {
@@ -15,8 +15,15 @@ h1 {
 	color: #ff4081;
 }
 
+h2 {
+	font-size: clamp(1.85rem, 0.967vw + 1.621rem, 2.31rem);
+}
+
 h3 {
 	font-size: clamp(1.25rem, 0.652vw + 1.095rem, 1.56rem);
+}
+h4 {
+	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
 }
 
 p {
