@@ -47,3 +47,53 @@
 		align-items: center;
 	}
 }
+
+.homeCursos {
+	background: #f7f7f7;
+	padding: 6.25rem 0;
+}
+
+.cardCurso h3 {
+	color: #ff4081;
+}
+
+.cardCurso h3,
+.cardCurso p {
+	text-align: center;
+}
+
+.cardCurso {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.2rem;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.2rem;
+}
+
+.buttonCards {
+	background: #ff4081;
+	border-radius: 62px;
+	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
+	padding: 8px 32px;
+	color: #fff;
+}
+
+.cardCurso img {
+	width: auto;
+	height: 100%;
+	max-height: 270px;
+}
+
+@media (max-width: 1025px) {
+	.cards {
+		grid-template-columns: 1fr;
+		gap: 5rem;
+	}
+}
