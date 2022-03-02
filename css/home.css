@@ -1,9 +1,11 @@
 .mainBanner {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	padding: 6rem 1rem;
 	gap: 2.5rem;
 }
+
 .textBanner {
 	display: flex;
 	flex-direction: column;
@@ -30,7 +32,7 @@
 
 .mainBanner img {
 	max-width: 450px;
-	width: 80%;
+	width: 70%;
 }
 
 .homeCursos {
@@ -38,28 +40,31 @@
 	padding: 6.25rem 0;
 }
 
-.cardCurso h4 {
+.cards h4 {
 	color: #ff4081;
 }
 
-.cardCurso h3,
-.cardCurso p {
+.cards h4,
+.cards p {
 	text-align: center;
 }
 
-.cardCurso {
+.cards {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1.2rem;
-	max-width: 480px;
-	margin: 0 auto;
+	gap: 1em;
+	max-width: 47%;
 }
 
-.cards {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1.2rem;
+.card img {
+	max-height: 272px;
 }
 
 .buttonCards {
@@ -76,11 +81,13 @@
 	max-height: 270px;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 992px) {
 	.cards {
-		grid-template-columns: 1fr;
-		gap: 5rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
 	}
+
 	.homeCursos h2 {
 		text-align: center;
 	}
@@ -117,11 +124,18 @@
 }
 
 @media (max-width: 768px) {
+	.cards {
+		gap: 5em;
+	}
+	.card {
+		flex-wrap: wrap;
+		gap: 2rem;
+		max-width: 90%;
+	}
 	.mainBanner {
 		flex-direction: column;
 		align-items: center;
-		padding-left: 1.2rem;
-		padding-right: 1.2rem;
+		padding: 4rem 1.25rem;
 	}
 	h1,
 	.textBanner p {

@@ -30,6 +30,7 @@ h5 {
 	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
 }
 
+body,
 p {
 	font-size: clamp(0.93rem, 0.41vw + 0.833rem, 1.125rem);
 }
@@ -132,8 +133,8 @@ input[type="checkbox"] {
 
 @media (max-width: 768px) {
 	.logo img {
-		max-width: 230px;
-		width: 60vw;
+		max-width: 180px;
+		width: 50vw;
 	}
 
 	.menu {
