@@ -11,6 +11,10 @@
 .lineTextCursos h3 {
 	color: #ff4081;
 }
+.cursoExplanation {
+	max-width: 1200px;
+	margin: 5rem auto;
+}
 
 .lineButtomCursos {
 	background-color: #419488;
@@ -50,11 +54,44 @@
 	margin-bottom: 5rem;
 }
 
-footer {
-	margin-top: 10rem;
+.lastSection {
+	margin-bottom: 5rem;
+}
+.grey {
+	background-color: #f7f7f7;
+	padding: 4rem 0;
+}
+
+.wrapper2 {
+	max-width: 1200px;
+	width: 94%;
+	margin: auto;
+}
+
+input,
+textarea {
+	padding: 16px;
+	width: 90%;
+	border-radius: 8px;
+	border: 1px solid #686868;
+	margin-bottom: 0.75rem;
+	font-size: clamp(0.93rem, 0.41vw + 0.833rem, 1.125rem);
+}
+
+#enviar {
+	width: fit-content;
+	background-color: #ff4081;
+	border: 0;
+	color: white;
+	border-radius: 62px;
+	padding: 0.5rem 3rem;
 }
 
 @media (max-width: 768px) {
+	.titleCursos,
+	.lineTextCursos {
+		text-align: center;
+	}
 	.lineCursos {
 		display: flex;
 		flex-direction: column;
