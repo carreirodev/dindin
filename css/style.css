@@ -37,7 +37,8 @@ p {
 }
 
 /********************** Menu Bar  **********************/
-header {
+header,
+footer {
 	background-color: #2e948a;
 }
 .navbar {
@@ -48,6 +49,10 @@ header {
 	justify-content: space-between;
 	padding: 20px;
 	color: #fff;
+}
+
+.bottomBar .logo {
+	padding: 40px 0;
 }
 
 .navbar a {
@@ -65,9 +70,15 @@ header {
 	transition: 0.3s ease;
 }
 
-.menu li {
+.menu li,
+.menuBottom li {
 	padding: 0px 20px;
 	list-style-type: none;
+}
+
+.menu ul,
+.menuBottom ul {
+	padding: 0;
 }
 
 input[type="checkbox"] {
@@ -78,6 +89,38 @@ input[type="checkbox"] {
 	display: none;
 	font-size: 48px;
 	/* user-select: none; */
+}
+
+.menuBottom li {
+	padding-bottom: 8px;
+}
+
+.menuBottom a {
+	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
+	color: #fff;
+}
+
+.buttomSpace {
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	gap: 1rem;
+}
+
+.buttonBottom {
+	border: 2px solid #ffffff;
+	border-radius: 62px;
+	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.bottomBar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -115,5 +158,14 @@ input[type="checkbox"] {
 
 	.hamburger {
 		display: block;
+	}
+
+	.bottomBar {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.menuBottom li {
+		text-align: center;
 	}
 }

@@ -17,7 +17,8 @@
 	font-size: clamp(1.3rem, 0.841vw + 1.101rem, 1.7rem);
 }
 
-.buttonBanner {
+.buttonBanner,
+.buttonPosts {
 	border-radius: 62px;
 	border: 2px solid #ff4081;
 	display: inline-block;
@@ -80,6 +81,9 @@
 		grid-template-columns: 1fr;
 		gap: 5rem;
 	}
+	.homeCursos h2 {
+		text-align: center;
+	}
 }
 
 .aboutUs {
@@ -134,4 +138,34 @@
 	.aboutUs h2 {
 		text-align: center;
 	}
+}
+
+.homeCursos h2 {
+	color: #009688;
+}
+
+.image {
+	width: 320px;
+	height: 190px;
+	background-color: #c4c4c4;
+}
+
+.content h3 {
+	color: #009688;
+}
+.moreContent {
+	padding-bottom: 4rem;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.buttonAreaPost {
+	margin-top: 4rem;
+	text-align: center;
 }
