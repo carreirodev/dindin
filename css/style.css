@@ -20,9 +20,13 @@ h2 {
 }
 
 h3 {
+	font-size: clamp(1.75rem, 0.919vw + 1.532rem, 2.187rem);
+}
+
+h4 {
 	font-size: clamp(1.25rem, 0.652vw + 1.095rem, 1.56rem);
 }
-h4 {
+h5 {
 	font-size: clamp(1rem, 0.526vw + 0.875rem, 1.25rem);
 }
 
@@ -37,9 +41,12 @@ p {
 }
 
 /********************** Menu Bar  **********************/
-header,
-footer {
+header {
 	background-color: #2e948a;
+}
+
+footer {
+	background-color: #419488;
 }
 .navbar {
 	font-size: 1.25rem;
