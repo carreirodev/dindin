@@ -113,11 +113,13 @@ textarea {
 .blogList {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 5rem;
+	gap: 5vw;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
-
+.blogList a {
+	color: #000;
+}
 .screenArticle {
 	width: 520px;
 	max-width: 520px;
