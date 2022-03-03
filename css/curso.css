@@ -87,6 +87,44 @@ textarea {
 	padding: 0.5rem 3rem;
 }
 
+.blog {
+	max-width: 960px;
+	margin: 4rem auto;
+	align-items: center;
+}
+.blogPageTitle {
+	color: #009688;
+	font-size: clamp(2.35rem, 1.22vw + 2.061rem, 2.93rem);
+}
+
+.blogArticles img {
+	width: 100%;
+}
+.blogTitle {
+	color: #ff4081;
+}
+
+.blogArticles {
+	display: grid;
+	justify-content: stretch;
+	gap: 1rem;
+}
+
+.blogList {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.screenArticle {
+	width: 520px;
+	max-width: 520px;
+	height: 260px;
+	background-color: #c4c4c4;
+}
+
 @media (max-width: 768px) {
 	.titleCursos,
 	.lineTextCursos {
@@ -100,5 +138,9 @@ textarea {
 
 	.lineTextCursos {
 		align-items: center;
+	}
+	.blogList {
+		grid-template-columns: 1fr;
+		gap: 5rem;
 	}
 }
